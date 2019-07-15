@@ -1,0 +1,25 @@
+.tableDemo{
+    padding-bottom: 30px;
+    .tableDemo-content{
+        width: 100%;
+        padding-bottom: 20px;
+        width: 97%;
+        margin: 10px auto 0 auto;
+    }
+    .tableDemo-title{
+        border-bottom: 1px solid #F2F6F8;
+    }
+    .tableDemo-page{
+        width: 100%;
+        .pageIndex{
+            float: right;
+            margin-right: 30px;
+        }
+    }
+    .tableDemo-screen{
+        display: flex;
+        margin-top: 30px;
+        padding: 20px;
+        justify-content: space-between;
+    }
+}

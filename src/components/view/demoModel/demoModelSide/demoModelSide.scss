@@ -1,0 +1,12 @@
+.demoModelSide{
+    width: 201px !important;
+    .el-icon-s-fold,
+    .el-icon-s-unfold{
+        color: white;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 35px;
+        cursor: pointer;
+    }
+}

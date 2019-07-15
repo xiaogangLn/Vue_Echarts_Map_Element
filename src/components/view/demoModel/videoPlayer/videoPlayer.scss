@@ -1,0 +1,19 @@
+.videoPlayer{
+    width: 100%;
+    .videoPlayer-title{
+        border-bottom: 1px solid #F2F6F8;
+    }
+    .videoPlayer-dateils{
+        font-size: 15px;
+    }
+    .video-player{
+        width: 85%;
+        margin: 10px auto;
+        padding-bottom: 30px;
+    }
+    .video-js .vjs-icon-placeholder {
+        width: 85%;
+        height: 300px;
+        display: block;
+    }
+}

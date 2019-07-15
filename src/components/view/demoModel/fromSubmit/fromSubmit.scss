@@ -1,0 +1,24 @@
+.fromSubmit{
+    width: 100%;
+    .fromSubmit-title{
+        border-bottom: 1px solid #F2F6F8;
+    }
+    .login-From{
+        width: 400px;
+        height: 320px;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgb(218, 224, 226);
+    }
+    .demo-ruleForm{
+        // margin-left: -50px;
+        padding-top: 30px;
+        margin-left: -50px;
+        width: 400px;
+    }
+    .login-From-title{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 30px;
+    }
+}
