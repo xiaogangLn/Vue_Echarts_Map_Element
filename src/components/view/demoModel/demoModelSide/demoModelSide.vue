@@ -15,7 +15,11 @@
           <span>{{item.name}}</span>
         </template>
         <el-menu-item-group v-for="items in item.children" :key="items.name">
-          <el-menu-item :index="items.id" @click="routerTabSide(items)">{{items.name}}</el-menu-item>
+          <el-menu-item :index="items.id" @click="routerTabSide(items)">
+            <router-link :to="items.toRouter">
+              {{items.name}}
+            </router-link>
+          </el-menu-item>
         </el-menu-item-group>
       </el-submenu>
     </el-menu>
@@ -37,11 +41,13 @@ export default {
           children: [
             {
               name: '视频查看',
-              id: '0-0'
+              id: '0-0',
+              toRouter: '/videoPlayer'
             },
             {
               name: 'PDF查看',
-              id: '0-1'
+              id: '0-1',
+              toRouter: '/PDFplayer'
             }
           ]
         },
@@ -52,11 +58,13 @@ export default {
           children: [
             {
               name: '通用表格及分页',
-              id: '0-0'
+              id: '0-0',
+              toRouter: '/tableDemo'
             },
             {
               name: '滚动条表格及分页',
-              id: '0-1'
+              id: '0-1',
+              toRouter: '/specialTable'
             }
           ]
         },
@@ -67,7 +75,8 @@ export default {
           children: [
             {
               name: '带有校验规则的表单',
-              id: '0-0'
+              id: '0-0',
+              toRouter: '/fromSubmit'
             }
           ]
         },
@@ -78,15 +87,18 @@ export default {
           children: [
             {
               name: '条形、折线图',
-              id: '0-0'
+              id: '0-0',
+              toRouter: '/echartsMap'
             },
             {
               name: '饼状图',
-              id: '0-1'
+              id: '0-1',
+              toRouter: '/echartsCake'
             },
             {
               name: '地图',
-              id: '0-2'
+              id: '0-2',
+              toRouter: '/echartsChinaMap'
             }
           ]
         }
@@ -97,39 +109,6 @@ export default {
     // 路由跳转
     routerTabSide (val) {
       console.log(val)
-      if (val.name === '视频查看') {
-        this.$router.push({
-          path: '/videoPlayer'
-        })
-      } else if (val.name === 'PDF查看') {
-        this.$router.push({
-          path: '/PDFplayer'
-        })
-      } else if (val.name === '通用表格及分页') {
-        this.$router.push({
-          path: '/tableDemo'
-        })
-      } else if (val.name === '滚动条表格及分页') {
-        this.$router.push({
-          path: '/specialTable'
-        })
-      } else if (val.name === '带有校验规则的表单') {
-        this.$router.push({
-          path: '/fromSubmit'
-        })
-      } else if (val.name === '条形、折线图') {
-        this.$router.push({
-          path: '/echartsMap'
-        })
-      } else if (val.name === '饼状图') {
-        this.$router.push({
-          path: '/echartsCake'
-        })
-      } else if (val.name === '地图') {
-        this.$router.push({
-          path: '/echartsChinaMap'
-        })
-      }
     },
     handleOpen (key, keyPath) {
       console.log(key, keyPath)
