@@ -1,6 +1,6 @@
 <template>
   <div class="tableDemo">
-     <div class="tableDemo-title p-t-20 p-l-20 p-b-15">
+    <div class="tableDemo-title p-t-20 p-l-20 p-b-15">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item :to="{ path: '/demoModel' }">首页</el-breadcrumb-item>
         <el-breadcrumb-item>普通表格及分页(各行换色)</el-breadcrumb-item>
