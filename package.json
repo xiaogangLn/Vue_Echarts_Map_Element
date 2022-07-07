@@ -16,7 +16,7 @@
     "echarts": "^4.2.1",
     "element-ui": "^2.10.1",
     "font-awesome": "^4.7.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "screenfull": "^4.2.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
